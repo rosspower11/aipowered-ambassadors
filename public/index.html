@@ -7,8 +7,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css" />
   <style>
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}:root{--bg-black:#0A0A0A;--bg-charcoal:#141414;--bg-dark:#1A1A1A;--bg-mid:#222;--bg-light:#F5F5F0;--bg-cream:#FAFAF7;--text-white:#FFF;--text-grey:#888;--text-dark-grey:#666;--text-black:#0A0A0A;--text-muted:rgba(255,255,255,.35);--accent:#9BB0C4;--off-white:#E8E8E4;--green:#8BC49A;--border-dark:rgba(255,255,255,.06);--border-light:rgba(0,0,0,.08);--sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--mono:'JetBrains Mono',monospace;--ease:cubic-bezier(.16,1,.3,1)}body{font-family:var(--sans);background:var(--bg-black);color:var(--text-white);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}.anim{opacity:0;transform:translateY(30px);transition:all .7s var(--ease)}.anim.visible{opacity:1;transform:translateY(0)}.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(10,10,10,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border-dark)}.nav-brand{display:flex;align-items:baseline;gap:10px}.nav-brand-name{font-family:var(--mono);font-size:13px;font-weight:600;text-transform:lowercase;letter-spacing:.5px;color:var(--text-white)}.nav-brand-tag{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--accent)}.nav-cta{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:10px 24px;background:var(--text-white);color:var(--bg-black);text-decoration:none;transition:filter .3s}.nav-cta:hover{filter:brightness(.85)}.ticker{overflow:hidden;background:var(--bg-charcoal);border-bottom:1px solid var(--border-dark);padding:12px 0;margin-top:60px}.ticker-track{display:flex;gap:48px;animation:marquee 25s linear infinite;width:max-content}.ticker-item{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);white-space:nowrap;display:flex;align-items:center;gap:12px}.ticker-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:tickerPulse 1.5s ease-in-out infinite}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes tickerPulse{0%,100%{opacity:.4}50%{opacity:1}}.hero{padding:120px 48px 100px;max-width:1100px;margin:0 auto;text-align:center}.hero-label{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:32px}.hero-title{font-family:var(--serif);font-size:clamp(42px,5.5vw,72px);font-weight:700;line-height:1.06;color:var(--text-white);margin-bottom:28px}.hero-title span{color:var(--accent)}.hero-sub{font-size:18px;line-height:1.7;color:var(--text-grey);max-width:620px;margin:0 auto 48px}.hero-cta{display:inline-block;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;background:var(--text-white);color:var(--bg-black);text-decoration:none;transition:filter .3s}.hero-cta:hover{filter:brightness(.85)}.hero-note{font-family:var(--mono);font-size:12px;color:var(--text-muted);margin-top:20px;letter-spacing:.5px}.marquee-section{overflow:hidden;padding:48px 0;border-top:1px solid var(--border-dark);border-bottom:1px solid var(--border-dark)}.marquee-track{display:flex;gap:64px;animation:marquee 20s linear infinite;width:max-content}.marquee-text{font-family:var(--serif);font-size:clamp(24px,3vw,40px);font-weight:700;color:var(--text-muted);white-space:nowrap;text-transform:uppercase;letter-spacing:2px}.stats{padding:80px 48px;background:var(--bg-charcoal)}.stats-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}.stat-number{font-family:var(--serif);font-size:clamp(36px,4vw,56px);font-weight:700;color:var(--text-white);line-height:1.1}.stat-label{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-grey);margin-top:8px}.section{padding:100px 48px;max-width:1100px;margin:0 auto}.section-label{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.section-title{font-family:var(--serif);font-size:clamp(30px,4vw,50px);font-weight:700;line-height:1.12;color:var(--text-white);margin-bottom:24px}.section-body{font-size:17px;line-height:1.7;color:var(--text-grey);max-width:700px}.section-light{background:var(--bg-light);padding:100px 48px}.section-light .section-inner{max-width:1100px;margin:0 auto}.section-light .section-label{color:var(--text-dark-grey)}.section-light .section-title{color:var(--text-black)}.section-light .section-body{color:var(--text-dark-grey)}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:64px}.step-card{background:var(--bg-cream);border:1px solid var(--border-light);padding:40px 32px}.step-number{font-family:var(--serif);font-size:48px;font-weight:700;color:rgba(0,0,0,.08);line-height:1;margin-bottom:20px}.step-heading{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text-black);margin-bottom:12px;line-height:1.3}.step-desc{font-size:15px;line-height:1.7;color:var(--text-dark-grey)}.earn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:64px}.earn-card{background:var(--bg-charcoal);border:1px solid var(--border-dark);padding:40px 32px}.earn-card-highlight{background:var(--bg-dark);border:1px solid var(--accent)}.earn-amount{font-family:var(--serif);font-size:clamp(36px,4vw,56px);font-weight:700;color:var(--accent);line-height:1.1;margin-bottom:8px}.earn-per{font-family:var(--mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-grey);margin-bottom:20px}.earn-desc{font-size:15px;line-height:1.7;color:var(--text-grey)}.who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:64px}.who-card{background:var(--bg-cream);border:1px solid var(--border-light);padding:36px 32px}.who-heading{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--text-black);margin-bottom:10px}.who-desc{font-size:15px;line-height:1.7;color:var(--text-dark-grey)}.perks-list{margin-top:48px;display:flex;flex-direction:column;gap:20px}.perk-item{display:flex;align-items:flex-start;gap:16px;padding:24px 0;border-bottom:1px solid var(--border-dark)}.perk-check{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;margin-top:2px}.perk-check svg{width:14px;height:14px;stroke:var(--bg-black);stroke-width:2.5;fill:none}.perk-text-title{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--text-white);margin-bottom:4px}.perk-text-desc{font-size:15px;color:var(--text-grey);line-height:1.6}.faq-list{margin-top:48px}.faq-item{border-bottom:1px solid var(--border-dark)}.faq-question{width:100%;background:none;border:none;color:var(--text-white);font-family:var(--serif);font-size:18px;font-weight:500;text-align:left;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}.faq-question:hover{color:var(--accent)}.faq-icon{font-size:24px;font-weight:300;color:var(--text-grey);transition:transform .4s var(--ease);flex-shrink:0}.faq-item.open .faq-icon{transform:rotate(45deg)}.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}.faq-answer-inner{padding:0 0 24px;font-size:15px;line-height:1.7;color:var(--text-grey);max-width:700px}.faq-item.open .faq-answer{max-height:300px}.final-cta{padding:120px 48px;text-align:center;background:var(--bg-charcoal)}.final-cta-title{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1.08;color:var(--text-white);margin-bottom:24px;max-width:800px;margin-left:auto;margin-right:auto}.final-cta-sub{font-size:17px;color:var(--text-grey);margin-bottom:48px;max-width:550px;margin-left:auto;margin-right:auto;line-height:1.7}.final-cta-btn{display:inline-block;font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:20px 56px;background:var(--text-white);color:var(--bg-black);text-decoration:none;transition:filter .3s}.final-cta-btn:hover{filter:brightness(.85)}.final-cta-note{font-family:var(--mono);font-size:12px;color:var(--text-muted);margin-top:20px;letter-spacing:.5px}.footer{padding:32px 48px;text-align:center;border-top:1px solid var(--border-dark)}.footer-text{font-size:13px;color:var(--text-muted)}.footer-text a{color:var(--text-grey);text-decoration:none}.footer-text a:hover{color:var(--accent)}@media(max-width:900px){.nav{padding:14px 24px}.hero{padding:80px 24px 72px}.section{padding:72px 24px}.section-light{padding:72px 24px}.stats{padding:56px 24px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}.steps-grid{grid-template-columns:1fr}.earn-grid{grid-template-columns:1fr}.who-grid{grid-template-columns:1fr}.final-cta{padding:80px 24px}.footer{padding:24px}}
+    .apply-form{max-width:560px;margin:48px auto 0;display:flex;flex-direction:column;gap:16px;text-align:left}
+    .apply-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .apply-form input{width:100%;height:56px;padding:0 20px;background:var(--bg-dark);border:1px solid var(--border-dark);color:var(--text-white);font-family:var(--sans);font-size:15px;border-radius:0;transition:border-color .2s}
+    .apply-form input::placeholder{color:var(--text-muted)}
+    .apply-form input:focus{outline:none;border-color:var(--accent)}
+    .apply-form .iti{width:100%;display:block}
+    .apply-form .iti input[type=tel]{padding-left:96px}
+    .apply-form .iti--separate-dial-code .iti__selected-flag{background:var(--bg-mid);border-right:1px solid var(--border-dark);padding:0 8px 0 12px}
+    .apply-form .iti__selected-dial-code{color:var(--text-white);font-family:var(--sans);font-size:15px;margin-left:6px}
+    .apply-form .iti__arrow{border-top-color:var(--text-grey)}
+    .apply-form .iti--separate-dial-code.iti--allow-dropdown:hover .iti__selected-flag,
+    .apply-form .iti--separate-dial-code.iti--allow-dropdown .iti__selected-flag:focus{background:var(--bg-charcoal)}
+    .apply-form .iti__country-list{background:var(--bg-dark);color:var(--text-white);border:1px solid var(--border-dark);box-shadow:0 12px 40px rgba(0,0,0,.5)}
+    .apply-form .iti__country:hover,.apply-form .iti__country.iti__highlight{background:var(--bg-mid)}
+    .apply-form .iti__dial-code{color:var(--text-grey)}
+    .apply-form .iti__divider{border-bottom-color:var(--border-dark)}
+    .form-submit{margin-top:8px;font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:20px 56px;background:var(--text-white);color:var(--bg-black);border:none;cursor:pointer;transition:filter .3s}
+    .form-submit:hover{filter:brightness(.85)}
+    .form-submit:disabled{opacity:.6;cursor:not-allowed}
+    .form-note{font-family:var(--mono);font-size:12px;color:var(--text-muted);margin:20px auto 0;letter-spacing:.5px;text-align:center;max-width:560px}
+    .form-error{font-family:var(--mono);font-size:12px;color:#E89898;margin-top:12px;text-align:center;letter-spacing:.5px}
+    .form-success{max-width:560px;margin:48px auto 0;padding:40px 32px;background:var(--bg-dark);border:1px solid var(--green);text-align:center}
+    .form-success-title{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--text-white);margin-bottom:12px}
+    .form-success-body{font-size:15px;color:var(--text-grey);line-height:1.6}
+    @media(max-width:600px){.apply-form .form-row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -22,8 +48,82 @@
   <section class="section" style="padding-top:0"><p class="section-label anim">WHAT YOU GET</p><h2 class="section-title anim d1">EVERYTHING YOU NEED<br>TO SUCCEED.</h2><div class="perks-list"><div class="perk-item anim"><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div><div class="perk-text-title">Unique referral link</div><div class="perk-text-desc">Tracked automatically. You always get credit for your referrals.</div></div></div><div class="perk-item anim d1"><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div><div class="perk-text-title">Pre-made content &amp; assets</div><div class="perk-text-desc">Social posts, stories, email templates, and key talking points ready to use.</div></div></div><div class="perk-item anim d2"><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div><div class="perk-text-title">Monthly payouts</div><div class="perk-text-desc">Reliable, transparent payments every month. No chasing invoices.</div></div></div><div class="perk-item anim d3"><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div><div class="perk-text-title">Real-time dashboard</div><div class="perk-text-desc">See clicks, signups, and commissions as they happen.</div></div></div><div class="perk-item anim d4"><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div><div class="perk-text-title">Direct line to the team</div><div class="perk-text-desc">Dedicated support for ambassadors. You are never left guessing.</div></div></div></div></section>
   <section class="section-light"><div class="section-inner"><p class="section-label anim">WHO THIS IS FOR</p><h2 class="section-title anim d1">IF YOU HAVE AN AUDIENCE,<br>THIS IS FOR YOU.</h2><div class="who-grid"><div class="who-card anim d1"><h3 class="who-heading">Content Creators</h3><p class="who-desc">You make content about AI, productivity, or professional development. Your audience trusts your recommendations.</p></div><div class="who-card anim d2"><h3 class="who-heading">Community Leaders</h3><p class="who-desc">You run a Slack group, Discord community, newsletter, or meetup. Your people are looking for what comes next.</p></div><div class="who-card anim d3"><h3 class="who-heading">Consultants &amp; Coaches</h3><p class="who-desc">You already advise clients on growth, skills, or tech. The Claude Accelerator is a natural extension of your work.</p></div><div class="who-card anim d4"><h3 class="who-heading">Past Participants</h3><p class="who-desc">You have been through the programme. You know it works. Now earn by sharing it with others who need it.</p></div></div></div></section>
   <section class="section"><p class="section-label anim">FREQUENTLY ASKED</p><h2 class="section-title anim d1">QUESTIONS BEFORE<br>YOU APPLY.</h2><div class="faq-list"><div class="faq-item anim"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Does it cost anything to become an ambassador?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">No. It is completely free to join. You earn commission, you never pay anything.</div></div></div><div class="faq-item anim d1"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I get paid?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Monthly payouts via bank transfer or PayPal. You choose what works for you. All tracked transparently through your dashboard.</div></div></div><div class="faq-item anim d2"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Do I need to have taken the accelerator myself?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">It helps, but it is not required. If you understand the value of AI education and have an audience that would benefit, you are a great fit.</div></div></div><div class="faq-item anim d3"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Is there a minimum number of referrals?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">No minimums. One referral earns you commission. A hundred referrals earns you a hundred commissions. There is no cap and no threshold.</div></div></div><div class="faq-item anim d4"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How long does the cookie last?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">30-day attribution window. If someone clicks your link and books within 30 days, you get the commission.</div></div></div><div class="faq-item anim d5"><button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What if someone I refer wants the Duo ticket?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Even better. You earn 15% of the Duo price, which is &pound;300 per referral instead of &pound;180.</div></div></div></div></section>
-  <section class="final-cta" id="apply"><h2 class="final-cta-title anim">YOU SHARE THE PROGRAMME.<br>WE HANDLE THE REST.</h2><p class="final-cta-sub anim d1">15% commission. No cap. No cost to join. Apply in under 2 minutes and start earning from your very first referral.</p><a href="mailto:ross@aipowered.xyz?subject=Ambassador%20Application&body=Hi%20Ross%2C%0A%0AI'd%20like%20to%20apply%20to%20become%20an%20AI%20Powered%20Ambassador.%0A%0AName%3A%20%0AHow%20I'd%20promote%3A%20%0AMy%20audience%2Freach%3A%20%0A%0AThanks!" class="final-cta-btn anim d2">APPLY NOW</a><p class="final-cta-note anim d3">We review every application within 48 hours</p></section>
+  <section class="final-cta" id="apply">
+    <h2 class="final-cta-title anim">YOU SHARE THE PROGRAMME.<br>WE HANDLE THE REST.</h2>
+    <p class="final-cta-sub anim d1">15% commission. No cap. No cost to join. Apply in under 2 minutes and start earning from your very first referral.</p>
+    <form id="apply-form" class="apply-form anim d2" novalidate>
+      <div class="form-row">
+        <input type="text" name="firstName" placeholder="First Name*" autocomplete="given-name" required />
+        <input type="text" name="lastName" placeholder="Last Name*" autocomplete="family-name" required />
+      </div>
+      <div class="form-row">
+        <input type="tel" id="phone" name="phone" placeholder="Phone*" autocomplete="tel" required />
+        <input type="email" name="email" placeholder="Email*" autocomplete="email" required />
+      </div>
+      <button type="submit" class="form-submit">SIGN UP AS AN AMBASSADOR</button>
+      <div id="form-error" class="form-error" hidden></div>
+    </form>
+    <p class="form-note anim d3">Once you've signed up, you'll receive an email.</p>
+    <div id="form-success" class="form-success" hidden>
+      <div class="form-success-title">You're in.</div>
+      <div class="form-success-body">Thanks for signing up. Check your inbox — your ambassador email is on its way.</div>
+    </div>
+  </section>
   <footer class="footer"><p class="footer-text">&copy; 2026 AI Powered &middot; <a href="mailto:ross@aipowered.xyz">ross@aipowered.xyz</a></p></footer>
   <script>const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')})},{threshold:.1});document.querySelectorAll('.anim').forEach(e=>observer.observe(e));</script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    (function(){
+      var WEBHOOK='https://services.leadconnectorhq.com/hooks/S6W5Rm24k3hr99ZywHxA/webhook-trigger/701a895d-1c43-4340-bdf3-5e3fcf786548';
+      var phoneInput=document.getElementById('phone');
+      var iti=window.intlTelInput(phoneInput,{
+        separateDialCode:true,
+        initialCountry:'gb',
+        preferredCountries:['gb','us','au','ca','ie'],
+        utilsScript:'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js'
+      });
+      var form=document.getElementById('apply-form');
+      var successEl=document.getElementById('form-success');
+      var errorEl=document.getElementById('form-error');
+      var submitBtn=form.querySelector('.form-submit');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        errorEl.hidden=true;
+        if(!form.firstName.value.trim()||!form.lastName.value.trim()||!form.email.value.trim()||!phoneInput.value.trim()){
+          errorEl.textContent='Please fill in every field.';
+          errorEl.hidden=false;
+          return;
+        }
+        if(iti.isValidNumber && !iti.isValidNumber()){
+          errorEl.textContent='Please enter a valid phone number.';
+          errorEl.hidden=false;
+          return;
+        }
+        submitBtn.disabled=true;
+        var originalLabel=submitBtn.textContent;
+        submitBtn.textContent='SUBMITTING...';
+        var body=new URLSearchParams({
+          firstName:form.firstName.value.trim(),
+          lastName:form.lastName.value.trim(),
+          phone:iti.getNumber()||phoneInput.value.trim(),
+          email:form.email.value.trim(),
+          source:'ambassadors.aipowered.xyz'
+        });
+        fetch(WEBHOOK,{method:'POST',body:body})
+          .then(function(r){
+            if(!r.ok) throw new Error('bad status '+r.status);
+            form.hidden=true;
+            successEl.hidden=false;
+            successEl.scrollIntoView({behavior:'smooth',block:'center'});
+          })
+          .catch(function(){
+            submitBtn.disabled=false;
+            submitBtn.textContent=originalLabel;
+            errorEl.textContent='Something went wrong. Please try again or email ross@aipowered.xyz.';
+            errorEl.hidden=false;
+          });
+      });
+    })();
+  </script>
 </body>
 </html>
